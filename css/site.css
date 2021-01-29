@@ -1,74 +1,82 @@
 .collection-item ul.browser-default {
-    min-height: 180px;
-    overflow: hidden;
-    padding-left: 5px;
-    padding-top: 20px;
+  min-height: 180px;
+  overflow: hidden;
+  padding-left: 5px;
+  padding-top: 20px;
 }
 
 .collection.with-header .collection-header {
-    height: 110px;
-    background-color: #2196F3;
-    color: white;
+  height: 110px;
+  background-color: #2196f3;
+  color: white;
 }
 
 li>p {
-    margin-bottom: 5px;
-    margin-top: 5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 li>div {
-    color: gray;
+  color: gray;
 }
 
 ul li {
-    list-style-type: "\2023";
-    padding-left: 10px;
+  list-style-type: '\2023';
+  padding-left: 10px;
 }
 
 ul li::marker {
-    color: #2196F3;
+  color: #2196f3;
+}
+
+h4 {
+  padding: 0.5em 0 0.5em 0.2em;
+}
+
+strong {
+  font-weight: bold;
 }
 
 /* Correctie witruimte header per les: witruimte onderaan vergroten */
 /********************************************************************/
 .collection-header h5 {
-    margin-top: 7px;
+  margin-top: 7px;
 }
 
 /* Bij de laatste les hebben we meer ruimte nodig in de header */
 .grid div:last-of-type .collection-header {
-    min-height: 110px;
-    height: auto;
+  min-height: 110px;
+  height: auto;
 }
 
 /* Correctie grid: de float gebruikt door materialize werkt niet goed
      als niet alle items even hoog zijn */
 /********************************************************************/
 .grid {
-    display: grid;
-    column-gap: 15px;
+  display: grid;
+  column-gap: 15px;
 }
 
 @media screen and (min-width: 601px) {
-    .grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (min-width: 993px) {
-    .grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* Correctie icons: de float gebruikt door materialize werkt niet goed 
      als de tekst die voor de icons staat te breed wordt.  */
 /********************************************************************/
 .collection-item div {
-    /* background-color: red; */
-    display: flex;
+  /* background-color: red; */
+  display: flex;
 }
 
 .collection-item div>*:last-child {
-    margin-left: auto;
+  margin-left: auto;
 }
