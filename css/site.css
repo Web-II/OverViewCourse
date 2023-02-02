@@ -11,12 +11,12 @@
   color: white;
 }
 
-li>p {
+li > p {
   margin-bottom: 5px;
   margin-top: 5px;
 }
 
-li>div {
+li > div {
   color: gray;
 }
 
@@ -63,7 +63,7 @@ strong {
   }
 }
 
-@media screen and (min-width: 993px) {
+@media screen and (min-width: 1160px) {
   .grid {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -77,6 +77,6 @@ strong {
   display: flex;
 }
 
-.collection-item div>*:last-child {
+.collection-item div > *:last-child {
   margin-left: auto;
 }
